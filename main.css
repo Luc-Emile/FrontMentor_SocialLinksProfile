@@ -1,0 +1,100 @@
+/* #################################### Defaults #################################### */
+body {
+    background-color: hsl(0, 0%, 8%);
+    color: hsl(0, 0%, 100%);
+    font-family: Inter, serif, sans-serif;
+    padding: 10%;
+    font-size: 14px;
+}
+
+.container {
+    background-color: hsl(0, 0%, 12%);
+    width: 40%;
+    display: block;
+    margin: auto;
+    border-radius: 12px;
+    padding: 5%;
+}
+
+.row {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.row::after {
+    display: table;
+    clear: both;
+    content: "";
+}
+
+* {
+    box-sizing: border-box;
+} 
+
+/* #################################### Custom styles #################################### */
+.profile {
+    display: block;
+    margin: auto;
+}
+
+div.profile img {
+    max-width: 100%;
+    height: auto;
+    padding: 5px;
+    display: block;
+    margin: auto;
+}
+.photo {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+}
+
+div.name,
+div.description,
+div.site {
+    display: block;
+    margin: auto;
+}
+
+div.name p {
+    color: hsl(75, 94%, 57%);
+    font-weight: bold;
+}
+
+div.site button {
+    background-color: hsl(0, 0%, 20%);
+    color: hsl(0, 0%, 100%);
+    font-weight: bold;
+    /* padding: 14px 100px; top & bottom    left & right */
+    height: 40px;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 10px;
+    margin-left: 0;
+    margin-right: 0;
+    border-radius: 10px;
+    border: none;
+}
+
+div.site button:hover {
+    background-color: hsl(75, 94%, 57%);
+    color: hsl(0, 0%, 12%);
+}
+
+/* #################################### Mobile #################################### */
+@media screen and (max-width: 500px) {
+
+    .container {
+        width: 100%;
+        display: block;
+        margin: auto;
+    }
+
+    button {
+        min-width: 80px;
+    }
+
+}
